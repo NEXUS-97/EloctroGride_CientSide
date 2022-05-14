@@ -1,0 +1,128 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+.container{
+	width: 100%;
+	margin:auto;
+	overflow: hidden;
+}
+
+html,body{
+    font: 15px/1.5 "Ubuntu",sans-serif;
+    padding: 0;
+    margin: 0px;
+    background: #6495ED;
+    
+}
+
+.slider{
+    top: 0;
+    width: 1350px;
+    height: 675px;
+    background: url(../images/single_service_01.jpg);
+    margin: 0px ;
+    animation: slide 20s infinite;
+    background-size: cover;
+    
+}
+    
+@keyframes slide{
+    25{
+        background: url(../images/single_service_01.jpg);
+         background-size: cover;
+    }
+    50%{ background: url(../images/single_service_03.jpg);
+         background-size: cover;
+    }
+    75%{
+        background: url(../images/single_service_02.jpg);
+         background-size: cover;
+    }
+    100%{
+        background: url(../images/single_service_04.jpg);
+         background-size: cover;
+    }
+}
+
+    
+
+.box
+{
+    position: absolute;
+    top: 125%;
+    left:  50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: 55%;
+    padding: 250px;
+    background:#000000  ;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.9);
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.box p
+{
+    margin: 0 0 30px;
+    font-family: serif;
+    color:#FFFFFF  ;
+   
+}
+
+.inbox lable
+{
+   font-family: serif;
+    color:#FFFFFF ;
+    padding: 0%;
+    left: 0
+    font-sze: 125%
+}
+
+.none
+{
+    width: 75%;
+   color: mediumslateblue;
+    padding: 1%;
+}
+
+
+.box .inbox [type = "date"]
+{
+    width: 30%;
+    padding: 3px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #ffff;
+}
+
+select
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border: 1px solid #ffff;
+}
+
+.box .inbox [type = "submit"]
+{
+    width: 35%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(3, 66, 47);
+    background-color:#0077b3
+}
+
+
+
+
